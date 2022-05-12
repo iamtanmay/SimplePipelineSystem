@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 using namespace Pipelines{
 
-  //Keeps track of Pipelines for User
+  //User Pipeline states
   public interface IUser{
 
-      //Unique Identifier
-      int ID;
+      //User ID
+      string ID;
 
-      //States of pipelines for User
-      Dictionary<int, IState> states;
+      //Pipeline IDs, States
+      Dictionary<string, IState> states;
     }
   }
 }
