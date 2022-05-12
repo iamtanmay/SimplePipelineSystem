@@ -11,7 +11,7 @@ namespace Pipelines {
     //Task IDs
     List<string> tasks;
     
-    //Determine next Task. Triggered on finishing of current Task
-    void Evaluate(int parameter);
+    //Determine state: 0 unfinished, -1 failed, 1 passed. Triggered on finishing of current Task
+    int Evaluate(int parameter);
   }
 }
