@@ -4,13 +4,18 @@ namespace Pipelines {
   public interface ITask{
     
     //Unique Identifier for type
-    int ID;
+    string ID;
     
-    //Evaluate outcome of task. 0 unfinished, [-1, -2, -3,....-n] failed with parameter, [1, 2, 3...n] pass with parameter
-    //Called OnEvent
-    int Evaluate(string parameter);
+    //Parent pipeline
+    string Pipeline;
     
-    //Set up environment for task
+    //Outcome of task
+    string Result;
+    
+    //Task initialisation
     void Initialise();
+    
+    //Evaluate state: 0 unfinished, -1 failed, 1 passed
+    int Evaluate(string parameter);    
   }
 }
