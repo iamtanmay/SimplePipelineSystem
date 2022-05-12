@@ -3,7 +3,7 @@ namespace Pipelines {
   //Smallest unit of pipelines
   public interface ITask{
     
-    //Unique Identifier for type
+    //Task ID
     string ID;
     
     //Parent pipeline
