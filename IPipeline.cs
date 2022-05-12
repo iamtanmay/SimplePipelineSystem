@@ -5,7 +5,7 @@ namespace Pipelines {
   
   public interface IPipeline{
     
-    //Repository Pipeline ID
+    //Pipeline ID
     string ID;
     
     //Task IDs
