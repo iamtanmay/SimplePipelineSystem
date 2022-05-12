@@ -10,7 +10,7 @@ using namespace Pipelines{
       int ID;
 
       //States of pipelines for User
-      Dictionary<int, IPipelineState> pipelinesStates;
+      Dictionary<int, IState> states;
     }
   }
 }
