@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using namespace Pipelines{
 
   //Keeps track of Pipelines for User
-  public interface IPipelineUser{
+  public interface IUser{
 
       //Unique Identifier
       int ID;
