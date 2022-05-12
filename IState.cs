@@ -1,21 +1,18 @@
 namespace Pipelines {
   
   //Smallest unit of pipelines
-  public interface ITask{
+  public interface IState{
     
-    //Unique identifier
+    //Unique instance identifier
     string ID
+    
+    //Parent User ID
+    string User;
     
     //Parent Pipeline ID
     string Pipeline;
-    
-    //Outcome of task
-    string Result;
-    
-    //Task initialisation actions
-    void Initialise();
-    
-    //Evaluate state: 0 unfinished, -1 failed, 1 passed. Triggered on Event
-    int Evaluate(string parameter);    
-  }
+   
+    //Current Task
+    string Task;
+   }
 }
